@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f6fb;
+  color: #222;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  flex-direction: column;
+}
+
+.card {
+  width: 100%;
+  max-width: 430px;
+  background: #fff;
+  border-radius: 18px;
+  padding: 32px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  margin: 0 0 8px;
+  text-align: center;
+}
+
+.subtitle {
+  margin: 0 0 24px;
+  text-align: center;
+  color: #666;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+label {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+input {
+  padding: 12px;
+  border: 1px solid #d5dbe7;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #4f46e5;
+}
+
+button {
+  margin-top: 10px;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #4f46e5;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background: #3730a3;
+}
+
+.success,
+.error {
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.success {
+  background: #e8f7ee;
+  color: #176b3a;
+}
+
+.error {
+  background: #fdecec;
+  color: #b42318;
+}
+
+.footer-text {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.footer-text a {
+  color: #4f46e5;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.profile-card {
+  text-align: center;
+  /* max-width: 820px; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  scale: 90%;
+}
+
+.profile-image {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #eef2ff;
+  margin-bottom: 15px;
+}
+
+.profile-details {
+  text-align: left;
+  background: #f8fafc;
+  padding: 16px;
+  border-radius: 12px;
+  margin: 20px 0;
+  width: 80%;
+}
+
+.colleagues {
+  text-align: left;
+  margin-top: 28px;
+  border-top: 1px solid #e5e9f2;
+  padding-top: 20px;
+  width: 100%;
+}
+
+.colleagues h2 {
+  font-size: 18px;
+  margin: 0 0 16px;
+  text-align: center;
+}
+
+.colleagues-table {
+  overflow-x: auto;
+  border: 1px solid #e5e9f2;
+  border-radius: 12px;
+}
+
+.table-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #eef2ff;
+}
